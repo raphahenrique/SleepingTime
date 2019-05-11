@@ -26,4 +26,8 @@ Once you do wake up, the app will register your wake time and stop the timer.
 
 
 
+### Inspirations, Code Help, References
+
 https://github.com/shaobaili3/TimerS/tree/master/TimeS
+https://blog.gaelfoppolo.com/detecting-user-inactivity-in-ios-application-684b0eeeef5b
+https://www.raywenderlich.com/5817-background-modes-tutorial-getting-started
