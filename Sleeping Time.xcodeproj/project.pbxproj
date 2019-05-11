@@ -12,6 +12,9 @@
 		98A5A9CC2275046F0052DCFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A5A9CA2275046F0052DCFF /* Main.storyboard */; };
 		98A5A9CE227504720052DCFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98A5A9CD227504720052DCFF /* Assets.xcassets */; };
 		98A5A9D1227504720052DCFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A5A9CF227504720052DCFF /* LaunchScreen.storyboard */; };
+		98A7910A2287835000300105 /* TimerControlApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A791092287835000300105 /* TimerControlApplication.swift */; };
+		98A7910D2287896300300105 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A7910C2287896300300105 /* main.swift */; };
+		98A7910F228791FE00300105 /* applelogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 98A7910E228791FE00300105 /* applelogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		98A5A9CD227504720052DCFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98A5A9D0227504720052DCFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98A5A9D2227504720052DCFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98A791092287835000300105 /* TimerControlApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerControlApplication.swift; sourceTree = "<group>"; };
+		98A7910C2287896300300105 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		98A7910E228791FE00300105 /* applelogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applelogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		98A5A9C52275046F0052DCFF /* Sleeping Time */ = {
 			isa = PBXGroup;
 			children = (
-				98A5A9C62275046F0052DCFF /* AppDelegate.swift */,
+				98A7910B2287894600300105 /* System */,
 				98A5A9C82275046F0052DCFF /* ViewController.swift */,
 				98A5A9CA2275046F0052DCFF /* Main.storyboard */,
 				98A5A9CD227504720052DCFF /* Assets.xcassets */,
+				98A7910E228791FE00300105 /* applelogo.png */,
 				98A5A9CF227504720052DCFF /* LaunchScreen.storyboard */,
 				98A5A9D2227504720052DCFF /* Info.plist */,
 			);
 			path = "Sleeping Time";
+			sourceTree = "<group>";
+		};
+		98A7910B2287894600300105 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				98A5A9C62275046F0052DCFF /* AppDelegate.swift */,
+				98A791092287835000300105 /* TimerControlApplication.swift */,
+				98A7910C2287896300300105 /* main.swift */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +113,11 @@
 				TargetAttributes = {
 					98A5A9C22275046F0052DCFF = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,6 +147,7 @@
 				98A5A9D1227504720052DCFF /* LaunchScreen.storyboard in Resources */,
 				98A5A9CE227504720052DCFF /* Assets.xcassets in Resources */,
 				98A5A9CC2275046F0052DCFF /* Main.storyboard in Resources */,
+				98A7910F228791FE00300105 /* applelogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98A7910A2287835000300105 /* TimerControlApplication.swift in Sources */,
 				98A5A9C92275046F0052DCFF /* ViewController.swift in Sources */,
+				98A7910D2287896300300105 /* main.swift in Sources */,
 				98A5A9C72275046F0052DCFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

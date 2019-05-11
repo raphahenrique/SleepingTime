@@ -37,6 +37,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <state key="normal" title="Blue Button"/>
+                                <connections>
+                                    <action selector="blueButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a6G-vK-wy6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRe-jw-qma">
                                 <rect key="frame" x="264" y="381" width="95" height="49"/>
@@ -47,21 +50,45 @@
                                 <state key="normal" title="Red Button">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="redButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4SF-24-URb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ir-mE-4vs">
+                                <rect key="frame" x="130.5" y="438" width="114" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Ph9-sT-O4Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Green Button">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="greenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VTb-H1-5Lu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CQ5-Sg-v4E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="41l-fS-juu"/>
+                            <constraint firstItem="3Ir-mE-4vs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DLl-Oq-gFe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRe-jw-qma" secondAttribute="trailing" constant="16" id="GQj-mu-QdV"/>
                             <constraint firstItem="FRe-jw-qma" firstAttribute="top" secondItem="Mra-0W-zko" secondAttribute="bottom" constant="113" id="ZIk-p5-TVm"/>
                             <constraint firstItem="CQ5-Sg-v4E" firstAttribute="top" secondItem="Mra-0W-zko" secondAttribute="bottom" constant="113" id="ajk-2S-zp5"/>
                             <constraint firstItem="Mra-0W-zko" firstAttribute="top" secondItem="Uuj-cS-daA" secondAttribute="bottom" constant="50" id="iVg-Ks-DJT"/>
                             <constraint firstItem="Uuj-cS-daA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="126" id="inH-V3-lyo"/>
+                            <constraint firstItem="3Ir-mE-4vs" firstAttribute="top" secondItem="CQ5-Sg-v4E" secondAttribute="bottom" constant="8" id="tfM-mR-pHk"/>
                             <constraint firstItem="Uuj-cS-daA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uaY-bR-n3X"/>
                             <constraint firstItem="Mra-0W-zko" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yUY-zZ-c8l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="blueButton" destination="CQ5-Sg-v4E" id="DpJ-z2-fCc"/>
+                        <outlet property="greenButton" destination="3Ir-mE-4vs" id="VtR-k7-vqJ"/>
+                        <outlet property="redButton" destination="FRe-jw-qma" id="y2N-9E-KKm"/>
+                        <outlet property="timeLabel" destination="Mra-0W-zko" id="nMd-4o-xYE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
