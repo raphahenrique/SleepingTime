@@ -11,18 +11,16 @@ import UIKit
 
 class TimerControlApplication: UIApplication {
     
-
     private var idleTimeInSeconds: TimeInterval {
         let minutes: Double = 1
         //return minutes * 60
-        return 15
+        return 10
     }
     
     private var idleTimer: Timer?
     
     override init() {
         super.init()
-        print("TIMER WILL START")
         scheduleTimer()
     }
     
@@ -37,6 +35,7 @@ class TimerControlApplication: UIApplication {
     }
     
     private func scheduleTimer() {
+        print("TIMER WILL START")
         idleTimer = Timer.scheduledTimer(timeInterval: idleTimeInSeconds,
                                          target: self,
                                          selector: #selector(timeHasExceeded),
@@ -45,9 +44,8 @@ class TimerControlApplication: UIApplication {
     }
     
     @objc private func timeHasExceeded() {
-        print("time has exceeded - notification dispatched!!")
+        print("time has exceeded - notification dispatched to everyone!!!")
         NotificationCenter.default.post(name: .appTimeout, object: nil)
-        
     }
     
     override func sendEvent(_ event: UIEvent) {
@@ -69,20 +67,12 @@ class TimerControlApplication: UIApplication {
         
         
         //MARK: SEND EVENT Notes
+        
         /*
         you don’t need to check if the timer is nil in the sendEvent since the method you are calling to reset the timer already handles that case therefore it would A) have the right functionality in the nil case without the extra check B) would never result in a nil exception
         */
         
         
     }
-    
-    
-    
-}
-
-
-extension Notification.Name {
-    
-    static let appTimeout = Notification.Name("appTimeout")
     
 }

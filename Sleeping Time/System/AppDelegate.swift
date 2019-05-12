@@ -12,16 +12,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         print("APP STATUS   ------  didFinishLaunchingWithOptions")
+        
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(AppDelegate.applicationDidTimeout(notification:)),
                                                name: .appTimeout,
                                                object: nil)
-        
-        
+
         return true
     }
 
@@ -59,9 +59,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     @objc func applicationDidTimeout(notification: NSNotification) {
         
-        print("************ application TIMEOUT - that is, device was idle for X time ***************")
-        
-        
+        print("************ APPLICATION TIMEOUT - that is, device was idle for X time ***************")
+
     }
 
     

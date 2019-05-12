@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		982D3B9522887756007D52D0 /* LocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D3B9422887756007D52D0 /* LocalNotifications.swift */; };
+		984A96732288A918007B8E90 /* TimeUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A96722288A918007B8E90 /* TimeUtility.swift */; };
 		98A5A9C72275046F0052DCFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5A9C62275046F0052DCFF /* AppDelegate.swift */; };
 		98A5A9C92275046F0052DCFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A5A9C82275046F0052DCFF /* ViewController.swift */; };
 		98A5A9CC2275046F0052DCFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A5A9CA2275046F0052DCFF /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		982D3B9422887756007D52D0 /* LocalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotifications.swift; sourceTree = "<group>"; };
+		984A96722288A918007B8E90 /* TimeUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeUtility.swift; sourceTree = "<group>"; };
 		98A5A9C32275046F0052DCFF /* Sleeping Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleeping Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A5A9C62275046F0052DCFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98A5A9C82275046F0052DCFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		982D3B9322887718007D52D0 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				982D3B9422887756007D52D0 /* LocalNotifications.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
 		98A5A9BA2275046F0052DCFF = {
 			isa = PBXGroup;
 			children = (
@@ -60,7 +72,9 @@
 		98A5A9C52275046F0052DCFF /* Sleeping Time */ = {
 			isa = PBXGroup;
 			children = (
+				982D3B9322887718007D52D0 /* Notifications */,
 				98A7910B2287894600300105 /* System */,
+				984A96722288A918007B8E90 /* TimeUtility.swift */,
 				98A5A9C82275046F0052DCFF /* ViewController.swift */,
 				98A5A9CA2275046F0052DCFF /* Main.storyboard */,
 				98A5A9CD227504720052DCFF /* Assets.xcassets */,
@@ -160,7 +174,9 @@
 			files = (
 				98A7910A2287835000300105 /* TimerControlApplication.swift in Sources */,
 				98A5A9C92275046F0052DCFF /* ViewController.swift in Sources */,
+				984A96732288A918007B8E90 /* TimeUtility.swift in Sources */,
 				98A7910D2287896300300105 /* main.swift in Sources */,
+				982D3B9522887756007D52D0 /* LocalNotifications.swift in Sources */,
 				98A5A9C72275046F0052DCFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

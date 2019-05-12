@@ -67,14 +67,22 @@
                                     <action selector="greenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VTb-H1-5Lu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z09-j6-hMA" userLabel="SleepTime">
+                                <rect key="frame" x="177.5" y="573" width="20.5" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CQ5-Sg-v4E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="41l-fS-juu"/>
                             <constraint firstItem="3Ir-mE-4vs" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DLl-Oq-gFe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FRe-jw-qma" secondAttribute="trailing" constant="16" id="GQj-mu-QdV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z09-j6-hMA" secondAttribute="bottom" constant="58" id="PoH-jZ-hnB"/>
                             <constraint firstItem="FRe-jw-qma" firstAttribute="top" secondItem="Mra-0W-zko" secondAttribute="bottom" constant="113" id="ZIk-p5-TVm"/>
                             <constraint firstItem="CQ5-Sg-v4E" firstAttribute="top" secondItem="Mra-0W-zko" secondAttribute="bottom" constant="113" id="ajk-2S-zp5"/>
+                            <constraint firstItem="Z09-j6-hMA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="esi-mX-3XX"/>
                             <constraint firstItem="Mra-0W-zko" firstAttribute="top" secondItem="Uuj-cS-daA" secondAttribute="bottom" constant="50" id="iVg-Ks-DJT"/>
                             <constraint firstItem="Uuj-cS-daA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="126" id="inH-V3-lyo"/>
                             <constraint firstItem="3Ir-mE-4vs" firstAttribute="top" secondItem="CQ5-Sg-v4E" secondAttribute="bottom" constant="8" id="tfM-mR-pHk"/>
@@ -87,6 +95,7 @@
                         <outlet property="blueButton" destination="CQ5-Sg-v4E" id="DpJ-z2-fCc"/>
                         <outlet property="greenButton" destination="3Ir-mE-4vs" id="VtR-k7-vqJ"/>
                         <outlet property="redButton" destination="FRe-jw-qma" id="y2N-9E-KKm"/>
+                        <outlet property="sleepTimeLabel" destination="Z09-j6-hMA" id="PAL-sK-ZvJ"/>
                         <outlet property="timeLabel" destination="Mra-0W-zko" id="nMd-4o-xYE"/>
                     </connections>
                 </viewController>
